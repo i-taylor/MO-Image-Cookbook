@@ -2,7 +2,9 @@
   const searchInput = document.querySelector('input[type="search"]');
   if (!searchInput) return;
 
-  const cards = Array.from(document.querySelectorAll(".grid .card, main .card"));
+  function getCards() {
+    return Array.from(document.querySelectorAll(".grid .card, main .card"));
+  }
   const resultsSection = document.getElementById("search-results");
   const resultsList = document.getElementById("results-list");
   const resultsEmpty = document.getElementById("results-empty");
@@ -20,6 +22,7 @@
     { title: "Time icon", page: "index.html", url: "index.html#asset-time-icon", keywords: "icons time.png clock" },
     { title: "Snippet checklist", page: "snippets.html", url: "snippets.html#snippet-checklist", keywords: "snippet rules checklist role presentation alt width height base url icons" }
   ];
+  const dynamicSearchData = [];
 
   function normalize(text) {
     return text.toLowerCase().replace(/\s+/g, " ").trim();
@@ -32,7 +35,7 @@
       return;
     }
 
-    const matches = SEARCH_DATA.filter((item) => {
+    const matches = SEARCH_DATA.concat(dynamicSearchData).filter((item) => {
       if (item.page === currentPage) return false;
       const haystack = normalize(item.title + " " + item.keywords);
       return haystack.includes(query);
@@ -54,7 +57,7 @@
   }
 
   function filterCards(query) {
-    cards.forEach((card) => {
+    getCards().forEach((card) => {
       const haystack = card.dataset.search || normalize(card.textContent);
       card.dataset.search = haystack;
       const match = !query || haystack.includes(query);
@@ -67,4 +70,24 @@
     filterCards(query);
     renderOtherResults(query);
   });
+
+  fetch("elements.json")
+    .then((res) => (res.ok ? res.json() : []))
+    .then((items) => {
+      if (!Array.isArray(items)) return;
+      items.forEach((item) => {
+        if (!item || !item.title || !item.id) return;
+        dynamicSearchData.push({
+          title: item.title,
+          page: "html-elements.html",
+          url: "html-elements.html#" + item.id,
+          keywords: item.keywords || ""
+        });
+      });
+      if (searchInput.value) {
+        const query = normalize(searchInput.value);
+        renderOtherResults(query);
+      }
+    })
+    .catch(() => {});
 })();
