@@ -40,10 +40,37 @@
       margin: 8px 0 18px;
       flex-wrap: wrap;
     }
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
     .tabs{
       display:flex;
       gap:10px;
       flex-wrap: wrap;
+    }
+    .filter-pills{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .pill-btn{
+      border:1px solid var(--border);
+      background:#eef2ff;
+      color:#1f2a6b;
+      border-radius: 999px;
+      padding:6px 10px;
+      font-size:12.5px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .pill-btn.active{
+      background:#1f2a6b;
+      color:#fff;
+      border-color:#1f2a6b;
     }
     .tab{
       display:inline-flex;
@@ -225,7 +252,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"umich-accordion-a\">\n  <div>Accordion A</div>\n  <details>\n    <summary>Item One</summary>\n    <div>\n      <p>Description text for Item One.</p>\n      <ul>\n        <li>does list</li>\n        <li>does list</li>\n      </ul>\n    </div>\n  </details>\n  <details>\n    <summary>Item Two</summary>\n    <div>\n      <p>Description text for Item Two.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Item Three</summary>\n    <div>\n      <p>Description text for Item Three.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Item Four</summary>\n    <div>\n      <p>Description text for Item four.</p>\n    </div>\n  </details>\n</div>",
     "snippetHtml": "<div class=\"umich-accordion-a\">\n  <div>Accordion A</div>\n  <details>\n    <summary>Item One</summary>\n    <div>\n      <p>Description text for Item One.</p>\n      <ul>\n        <li>does list</li>\n        <li>does list</li>\n      </ul>\n    </div>\n  </details>\n  <details>\n    <summary>Item Two</summary>\n    <div>\n      <p>Description text for Item Two.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Item Three</summary>\n    <div>\n      <p>Description text for Item Three.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Item Four</summary>\n    <div>\n      <p>Description text for Item four.</p>\n    </div>\n  </details>\n</div>",
-    "keywords": "accordion details summary list"
+    "keywords": "accordion details summary list",
+    "category": "Accordions"
   },
   {
     "id": "accordion-b",
@@ -233,7 +261,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"umich-accordion-b\">\n  <div>Accordion B</div>\n  <details>\n    <summary>Definition One</summary>\n    <div>\n      <p>This is the description for Dimension 1. You can add more text here as needed.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Definition Two</summary>\n    <div>\n      <p>This is the description for Dimension 2. You can add more text here as needed.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Definition Three</summary>\n    <div>\n      <p>This is the description for Dimension 3. You can add more text here as needed.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Definition Four</summary>\n    <div>\n      <p>This is the description for Dimension 4. You can add more text here as needed.</p>\n    </div>\n  </details>\n</div>",
     "snippetHtml": "<div class=\"umich-accordion-b\">\n  <div>Accordion B</div>\n  <details>\n    <summary>Definition One</summary>\n    <div>\n      <p>This is the description for Dimension 1. You can add more text here as needed.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Definition Two</summary>\n    <div>\n      <p>This is the description for Dimension 2. You can add more text here as needed.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Definition Three</summary>\n    <div>\n      <p>This is the description for Dimension 3. You can add more text here as needed.</p>\n    </div>\n  </details>\n  <details>\n    <summary>Definition Four</summary>\n    <div>\n      <p>This is the description for Dimension 4. You can add more text here as needed.</p>\n    </div>\n  </details>\n</div>",
-    "keywords": "accordion details summary"
+    "keywords": "accordion details summary",
+    "category": "Accordions"
   },
   {
     "id": "table-row-stripe",
@@ -241,7 +270,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<table class=\"umich-table-row-stripe\">\n  <thead>\n    <tr>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </tbody>\n</table>",
     "snippetHtml": "<table class=\"umich-table-row-stripe\">\n  <thead>\n    <tr>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </tbody>\n</table>",
-    "keywords": "table row stripe striped"
+    "keywords": "table row stripe striped",
+    "category": "Tables"
   },
   {
     "id": "table-col-stripe",
@@ -249,7 +279,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<table class=\"umich-table-col-stripe\">\n  <thead>\n    <tr>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </tbody>\n</table>",
     "snippetHtml": "<table class=\"umich-table-col-stripe\">\n  <thead>\n    <tr>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </tbody>\n</table>",
-    "keywords": "table column stripe striped"
+    "keywords": "table column stripe striped",
+    "category": "Tables"
   },
   {
     "id": "side-by-side-callout-a",
@@ -257,7 +288,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
-    "keywords": "callout side by side list"
+    "keywords": "callout side by side list",
+    "category": "Callout Boxes"
   },
   {
     "id": "side-by-side-callout-b",
@@ -265,7 +297,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
-    "keywords": "callout side by side text list"
+    "keywords": "callout side by side text list",
+    "category": "Callout Boxes"
   },
   {
     "id": "side-by-side-callout-c",
@@ -273,7 +306,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
-    "keywords": "callout side by side long text"
+    "keywords": "callout side by side long text",
+    "category": "Callout Boxes"
   },
   {
     "id": "side-by-side-callout-d",
@@ -281,7 +315,8 @@
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample A</li>\n      <li>Sample B</li>\n      <li>Sample B2</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample C</li>\n      <li>Sample D</li>\n    </ul>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample A</li>\n      <li>Sample B</li>\n      <li>Sample B2</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample C</li>\n      <li>Sample D</li>\n    </ul>\n  </div>\n</div>",
-    "keywords": "callout side by side two lists"
+    "keywords": "callout side by side two lists",
+    "category": "Callout Boxes"
   }
 ]
   </script>
@@ -294,10 +329,17 @@
 
   <main>
     <div class="nav-row">
-      <nav class="tabs" aria-label="Asset pages">
-        <a class="tab" href="index.html">Image Assets</a>
-        <a class="tab" href="html-elements.html" aria-current="page">HTML Elements</a>
-      </nav>
+      <div class="nav-left">
+        <nav class="tabs" aria-label="Asset pages">
+          <a class="tab" href="index.html">Image Assets</a>
+          <a class="tab" href="html-elements.html" aria-current="page">HTML Elements</a>
+        </nav>
+        <div class="filter-pills" id="element-filters" aria-label="Element filters">
+          <button class="pill-btn" type="button" data-filter="Accordions">Accordions</button>
+          <button class="pill-btn" type="button" data-filter="Tables">Tables</button>
+          <button class="pill-btn" type="button" data-filter="Callout Boxes">Callouts</button>
+        </div>
+      </div>
       <label class="search">
         <span class="visually-hidden">Search HTML elements</span>
         <input type="search" placeholder="Search HTML elements" aria-label="Search HTML elements" />
@@ -351,6 +393,7 @@
       card.className = "card";
       card.id = item.id;
       card.dataset.search = (item.title + " " + (item.keywords || "")).toLowerCase();
+      card.dataset.category = item.category || "Other";
 
       const title = document.createElement("h2");
       title.textContent = item.title;
@@ -407,7 +450,21 @@
     function renderItems(items, replace) {
       if (!elementsGrid) return;
       if (replace) elementsGrid.innerHTML = "";
-      items.forEach((item) => elementsGrid.appendChild(renderCard(item)));
+      const groups = items.reduce((acc, item) => {
+        const category = item.category || "Other";
+        if (!acc[category]) acc[category] = [];
+        acc[category].push(item);
+        return acc;
+      }, {});
+
+      Object.keys(groups).forEach((category) => {
+        const heading = document.createElement("h2");
+        heading.className = "section-title";
+        heading.textContent = category;
+        heading.dataset.category = category;
+        elementsGrid.appendChild(heading);
+        groups[category].forEach((item) => elementsGrid.appendChild(renderCard(item)));
+      });
     }
 
     function getInlineItems() {
@@ -469,6 +526,46 @@
         btn.disabled = false;
       }, 1100);
     });
+
+    const filterWrap = document.getElementById("element-filters");
+    const filterButtons = filterWrap ? Array.from(filterWrap.querySelectorAll("[data-filter]")) : [];
+    const activeFilters = new Set();
+
+    function applyFilters() {
+      const cards = Array.from(document.querySelectorAll("#elements-grid .card"));
+      const headings = Array.from(document.querySelectorAll("#elements-grid .section-title"));
+      const hasFilters = activeFilters.size > 0;
+
+      cards.forEach((card) => {
+        const category = card.dataset.category || "Other";
+        const show = !hasFilters || activeFilters.has(category);
+        card.style.display = show ? "" : "none";
+      });
+
+      headings.forEach((heading) => {
+        const category = heading.dataset.category || "Other";
+        const visibleCard = cards.some((card) => {
+          return (card.dataset.category || "Other") === category && card.style.display !== "none";
+        });
+        heading.style.display = visibleCard ? "" : "none";
+      });
+    }
+
+    if (filterWrap) {
+      filterWrap.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-filter]");
+        if (!btn) return;
+        const value = btn.getAttribute("data-filter");
+        if (activeFilters.has(value)) {
+          activeFilters.delete(value);
+          btn.classList.remove("active");
+        } else {
+          activeFilters.add(value);
+          btn.classList.add("active");
+        }
+        applyFilters();
+      });
+    }
 
     const modal = document.getElementById("preview-modal");
     const modalFrame = document.getElementById("modal-frame");
