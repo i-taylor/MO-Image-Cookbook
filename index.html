@@ -236,6 +236,17 @@
   </header>
 
   <main>
+    <div class="nav-row">
+      <nav class="tabs" aria-label="Asset pages">
+        <a class="tab" href="index.html" aria-current="page">Image Assets</a>
+        <a class="tab" href="html-elements.html">HTML Elements</a>
+      </nav>
+      <label class="search">
+        <span class="visually-hidden">Search assets</span>
+        <input type="search" placeholder="Search assets" aria-label="Search assets" />
+      </label>
+    </div>
+
     <div class="callout">
       <div><strong>Standard snippet rules</strong> <span class="pill">decorative images</span></div>
       <ul>
@@ -246,16 +257,6 @@
       </ul>
       <p><strong>Snippet checklist:</strong> Use <code>role="presentation"</code> and <code>alt=""</code> for decorative assets, include explicit <code>width</code> and <code>height</code>, use the correct base URL for the category, and avoid trailing <code>&lt;br /&gt;</code> tags.</p>
       <p><strong>Accessibility note:</strong> These assets are treated as decorative. If an image conveys meaning, remove <code>role="presentation"</code> and replace <code>alt=""</code> with meaningful alt text.</p>
-    </div>
-    <div class="nav-row">
-      <nav class="tabs" aria-label="Asset pages">
-        <a class="tab" href="index.html" aria-current="page">Image Assets</a>
-        <a class="tab" href="html-elements.html">HTML Elements</a>
-      </nav>
-      <label class="search">
-        <span class="visually-hidden">Search assets</span>
-        <input type="search" placeholder="Search assets" aria-label="Search assets" />
-      </label>
     </div>
 
     <section class="search-results" id="search-results" hidden>
