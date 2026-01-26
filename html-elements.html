@@ -63,6 +63,54 @@
       color:#fff;
       border-color:#0b1020;
     }
+    .section-title{ margin: 22px 0 10px; font-size: 16px; }
+    .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:14px; }
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding:14px;
+      box-shadow: var(--shadow);
+    }
+    .card h2{ margin:0 0 6px; font-size:15px; }
+    .meta{ margin:0 0 10px; font-size:12.5px; color: var(--muted); }
+    .preview{
+      border:1px dashed var(--border);
+      border-radius: 12px;
+      background:#fff;
+      padding:12px;
+      margin: 10px 0 12px;
+    }
+    .preview-frame{
+      width:100%;
+      border:0;
+      min-height: 260px;
+    }
+    .row{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:12px; }
+    .row strong{ font-size:13px; }
+    button.copy{
+      border:1px solid var(--border);
+      background:#fff;
+      border-radius: 10px;
+      padding:8px 10px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    button.copy:hover{ background:#f3f4f6; }
+    pre{
+      margin:10px 0 0;
+      background: var(--code);
+      color: var(--codeText);
+      border-radius: 12px;
+      padding:12px;
+      overflow:auto;
+      border:1px solid rgba(255,255,255,.06);
+    }
+    code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12.5px;
+      white-space: pre;
+    }
   </style>
 </head>
 <body>
@@ -80,6 +128,124 @@
         <a class="tab" href="html-elements.html" aria-current="page">HTML Elements</a>
       </nav>
     </div>
+
+    <h2 class="section-title">Accordions</h2>
+    <section class="grid">
+      <article class="card">
+        <h2>Accordion A</h2>
+        <p class="meta">Preview + copy/paste snippet.</p>
+        <div class="preview">
+          <iframe class="preview-frame" title="Accordion A preview" srcdoc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_286220000000000001/attachments/8338/michiganOnline30.css"><style>body{margin:0;padding:12px;font-family:Arial,sans-serif;background:#fff;}</style></head><body><div class="umich-accordion-a"><div>Accordion A</div><details><summary>Item One</summary><div><p>Description text for Item One.</p><ul><li>does list</li><li>does list</li></ul></div></details><details><summary>Item Two</summary><div><p>Description text for Item Two.</p></div></details><details><summary>Item Three</summary><div><p>Description text for Item Three.</p></div></details><details><summary>Item Four</summary><div><p>Description text for Item four.</p></div></details></div></body></html>'></iframe>
+        </div>
+        <div class="row">
+          <strong>Copy/paste snippet</strong>
+          <button class="copy" data-copy="#snip-accordion-a">Copy</button>
+        </div>
+        <pre><code id="snip-accordion-a">&lt;div class="umich-accordion-a"&gt;
+  &lt;div&gt;Accordion A&lt;/div&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Item One&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;Description text for Item One.&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;does list&lt;/li&gt;
+        &lt;li&gt;does list&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Item Two&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;Description text for Item Two.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Item Three&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;Description text for Item Three.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Item Four&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;Description text for Item four.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+&lt;/div&gt;</code></pre>
+      </article>
+
+      <article class="card">
+        <h2>Accordion B</h2>
+        <p class="meta">Preview + copy/paste snippet.</p>
+        <div class="preview">
+          <iframe class="preview-frame" title="Accordion B preview" srcdoc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_286220000000000001/attachments/8338/michiganOnline30.css"><style>body{margin:0;padding:12px;font-family:Arial,sans-serif;background:#fff;}</style></head><body><div class="umich-accordion-b"><div>Accordion B</div><details><summary>Definition One</summary><div><p>This is the description for Dimension 1. You can add more text here as needed.</p></div></details><details><summary>Definition Two</summary><div><p>This is the description for Dimension 2. You can add more text here as needed.</p></div></details><details><summary>Definition Three</summary><div><p>This is the description for Dimension 3. You can add more text here as needed.</p></div></details><details><summary>Definition Four</summary><div><p>This is the description for Dimension 4. You can add more text here as needed.</p></div></details></div></body></html>'></iframe>
+        </div>
+        <div class="row">
+          <strong>Copy/paste snippet</strong>
+          <button class="copy" data-copy="#snip-accordion-b">Copy</button>
+        </div>
+        <pre><code id="snip-accordion-b">&lt;div class="umich-accordion-b"&gt;
+  &lt;div&gt;Accordion B&lt;/div&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Definition One&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;This is the description for Dimension 1. You can add more text here as needed.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Definition Two&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;This is the description for Dimension 2. You can add more text here as needed.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Definition Three&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;This is the description for Dimension 3. You can add more text here as needed.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Definition Four&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;This is the description for Dimension 4. You can add more text here as needed.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+&lt;/div&gt;</code></pre>
+      </article>
+    </section>
   </main>
+
+  <script>
+    async function copyText(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (e) {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand("copy");
+        ta.remove();
+        return ok;
+      }
+    }
+
+    document.addEventListener("click", async (e) => {
+      const btn = e.target.closest("button.copy[data-copy]");
+      if (!btn) return;
+      const selector = btn.getAttribute("data-copy");
+      const el = document.querySelector(selector);
+      if (!el) return;
+      const ok = await copyText(el.textContent);
+      const original = btn.textContent;
+      btn.textContent = ok ? "Copied!" : "Copy failed";
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.disabled = false;
+      }, 1100);
+    });
+  </script>
 </body>
 </html>
