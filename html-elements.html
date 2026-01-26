@@ -111,9 +111,10 @@
       background:transparent;
     }
     .section-title{ margin: 22px 0 10px; font-size: 16px; }
-    .grid{ display:grid; grid-template-columns: repeat(2, minmax(320px, 1fr)); gap:14px; }
+    .elements-list{ display:flex; flex-direction:column; gap:18px; }
+    .category-grid{ display:grid; grid-template-columns: repeat(2, minmax(320px, 1fr)); gap:14px; }
     @media (max-width: 900px){
-      .grid{ grid-template-columns: 1fr; }
+      .category-grid{ grid-template-columns: 1fr; }
     }
     .card{
       background: var(--card);
@@ -346,7 +347,7 @@
       </label>
     </div>
 
-    <section class="grid" id="elements-grid"></section>
+    <section class="elements-list" id="elements-grid"></section>
   </main>
 
   <div class="modal" id="preview-modal" hidden>
@@ -458,12 +459,22 @@
       }, {});
 
       Object.keys(groups).forEach((category) => {
+        const section = document.createElement("section");
+        section.className = "category-section";
+        section.dataset.category = category;
+
         const heading = document.createElement("h2");
         heading.className = "section-title";
         heading.textContent = category;
-        heading.dataset.category = category;
-        elementsGrid.appendChild(heading);
-        groups[category].forEach((item) => elementsGrid.appendChild(renderCard(item)));
+
+        const grid = document.createElement("div");
+        grid.className = "category-grid";
+
+        groups[category].forEach((item) => grid.appendChild(renderCard(item)));
+
+        section.appendChild(heading);
+        section.appendChild(grid);
+        elementsGrid.appendChild(section);
       });
     }
 
@@ -533,7 +544,7 @@
 
     function applyFilters() {
       const cards = Array.from(document.querySelectorAll("#elements-grid .card"));
-      const headings = Array.from(document.querySelectorAll("#elements-grid .section-title"));
+      const sections = Array.from(document.querySelectorAll("#elements-grid .category-section"));
       const hasFilters = activeFilters.size > 0;
 
       cards.forEach((card) => {
@@ -542,12 +553,12 @@
         card.style.display = show ? "" : "none";
       });
 
-      headings.forEach((heading) => {
-        const category = heading.dataset.category || "Other";
+      sections.forEach((section) => {
+        const category = section.dataset.category || "Other";
         const visibleCard = cards.some((card) => {
           return (card.dataset.category || "Other") === category && card.style.display !== "none";
         });
-        heading.style.display = visibleCard ? "" : "none";
+        section.style.display = visibleCard ? "" : "none";
       });
     }
 

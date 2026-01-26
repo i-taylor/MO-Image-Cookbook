@@ -3,7 +3,7 @@
   if (!searchInput) return;
 
   function getCards() {
-    return Array.from(document.querySelectorAll(".grid .card, main .card"));
+    return Array.from(document.querySelectorAll(".grid .card, .category-grid .card, main .card"));
   }
   const resultsSection = document.getElementById("search-results");
   const resultsList = document.getElementById("results-list");
