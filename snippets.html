@@ -94,6 +94,29 @@
       font-size:13px;
       background:transparent;
     }
+    .search-results{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding:12px 14px;
+      box-shadow: var(--shadow);
+      margin: 0 0 18px;
+    }
+    .search-results h2{ margin:0 0 8px; font-size:14px; }
+    .results-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:8px;
+    }
+    .results-list a{
+      text-decoration:none;
+      color:#111827;
+      font-weight:600;
+    }
+    .result-meta{ font-size:12px; color: var(--muted); }
+    .results-empty{ margin:0; color: var(--muted); font-size:12.5px; }
     .card{
       background: var(--card);
       border:1px solid var(--border);
@@ -132,7 +155,7 @@
     }
   </style>
 </head>
-<body>
+<body data-page="snippets.html">
   <header>
     <div class="wrap">
       <h1>Michigan Online — Snippet Rules</h1>
@@ -161,7 +184,13 @@
       </label>
     </div>
 
-    <section class="card">
+    <section class="search-results" id="search-results" hidden>
+      <h2>Matches on other pages</h2>
+      <p class="results-empty" id="results-empty">No matches found on other pages.</p>
+      <ul class="results-list" id="results-list"></ul>
+    </section>
+
+    <section class="card" id="snippet-checklist">
       <h2>Snippet checklist</h2>
       <p class="meta">Use these every time you add a new image.</p>
       <ol>
@@ -177,5 +206,7 @@
   <footer>
     <p><strong>Accessibility note:</strong> These assets are treated as decorative. If an image conveys meaning, remove <code>role="presentation"</code> and replace <code>alt=""</code> with meaningful alt text.</p>
   </footer>
+
+  <script src="search.js"></script>
 </body>
 </html>

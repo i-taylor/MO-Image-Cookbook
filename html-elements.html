@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Michigan Online — HTML Elements</title>
+  <style>
+    :root{
+      --card:#ffffff;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --code:#0b1020;
+      --codeText:#e5e7eb;
+      --shadow: 0 1px 2px rgba(0,0,0,.06);
+      --radius: 14px;
+      --focus:#2563eb;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#f6f7fb;
+      color:#111827;
+    }
+    header{
+      background:linear-gradient(120deg,#00274c,#0b1020);
+      color:#fff;
+      padding:28px 18px;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+    header .wrap{ max-width:1100px; margin:0 auto; }
+    h1{ margin:0 0 6px; font-size:22px; }
+    header p{ margin:0; opacity:.9; }
+    main{ max-width:1100px; margin:0 auto; padding:18px; }
+    .nav-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin: 8px 0 18px;
+      flex-wrap: wrap;
+    }
+    .tabs{
+      display:flex;
+      gap:10px;
+      flex-wrap: wrap;
+    }
+    .tab{
+      display:inline-flex;
+      align-items:center;
+      padding:8px 12px;
+      border-radius: 999px;
+      border:1px solid var(--border);
+      text-decoration:none;
+      color:#111827;
+      background:#fff;
+      box-shadow: var(--shadow);
+      font-size:13px;
+      font-weight:600;
+    }
+    .tab[aria-current="page"]{
+      background:#0b1020;
+      color:#fff;
+      border-color:#0b1020;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Michigan Online — HTML Elements</h1>
+      <p>Placeholder page for future HTML element guidance.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="nav-row">
+      <nav class="tabs" aria-label="Asset pages">
+        <a class="tab" href="index.html">Image Assets</a>
+        <a class="tab" href="html-elements.html" aria-current="page">HTML Elements</a>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
