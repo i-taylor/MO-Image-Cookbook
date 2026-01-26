@@ -33,7 +33,7 @@
   },
   {
     "id": "side-by-side-callout-a",
-    "title": "Side-by-side Callout A",
+    "title": "Callout A (Simple Callout)",
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
@@ -41,7 +41,7 @@
   },
   {
     "id": "side-by-side-callout-b",
-    "title": "Side-by-side Callout B",
+    "title": "Callout B (Right Callout, Left Text)",
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
@@ -49,7 +49,7 @@
   },
   {
     "id": "side-by-side-callout-c",
-    "title": "Side-by-side Callout C",
+    "title": "Callout C (Right Text, Left Callout)",
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
@@ -57,7 +57,7 @@
   },
   {
     "id": "side-by-side-callout-d",
-    "title": "Side-by-side Callout D",
+    "title": "Callout D (Side-by-side Callout)",
     "description": "Preview + copy/paste snippet.",
     "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample A</li>\n      <li>Sample B</li>\n      <li>Sample B2</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample C</li>\n      <li>Sample D</li>\n    </ul>\n  </div>\n</div>",
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample A</li>\n      <li>Sample B</li>\n      <li>Sample B2</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample C</li>\n      <li>Sample D</li>\n    </ul>\n  </div>\n</div>",
@@ -65,10 +65,10 @@
   },
   {
     "id": "side-by-side-callout-e",
-    "title": "Side-by-side Callout E",
+    "title": "Callout E (Image + Text, Side-by-side)",
     "description": "Preview + copy/paste snippet.",
-    "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\" style=\"width: 100%;\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Full Width Item 1</li>\n      <li>Full Width Item 2</li>\n    </ul>\n  </div>\n</div>",
-    "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\" style=\"width: 100%;\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Full Width Item 1</li>\n      <li>Full Width Item 2</li>\n    </ul>\n  </div>\n</div>",
-    "keywords": "callout side by side full width list"
+    "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>Left Callout Title</h2>\n    <img src=\"https://shared-files.online.umich.edu/michigan-online/course-images/current/michiganOnline.png\" alt=\"Michigan Online logo\" width=\"220\" height=\"38\" />\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>Right Callout Title</h2>\n    <img src=\"https://shared-files.online.umich.edu/michigan-online/course-images/current/umichlogo.png\" alt=\"University of Michigan logo\" width=\"71\" height=\"75\" />\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>Left Callout Title</h2>\n    <img src=\"https://shared-files.online.umich.edu/michigan-online/course-images/current/michiganOnline.png\" alt=\"Michigan Online logo\" width=\"220\" height=\"38\" />\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>Right Callout Title</h2>\n    <img src=\"https://shared-files.online.umich.edu/michigan-online/course-images/current/umichlogo.png\" alt=\"University of Michigan logo\" width=\"71\" height=\"75\" />\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
+    "keywords": "callout side by side image text"
   }
 ]
