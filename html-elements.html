@@ -94,6 +94,7 @@
       border-radius: var(--radius);
       padding:14px;
       box-shadow: var(--shadow);
+      position: relative;
     }
     .card h2{ margin:0 0 6px; font-size:15px; }
     .meta{ margin:0 0 10px; font-size:12.5px; color: var(--muted); }
@@ -121,13 +122,20 @@
     }
     button.copy:hover{ background:#f3f4f6; }
     button.fullscreen{
+      position:absolute;
+      top:10px;
+      right:10px;
       border:1px solid var(--border);
       background:#0b1020;
       color:#fff;
       border-radius: 10px;
-      padding:8px 10px;
+      width:32px;
+      height:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
       cursor:pointer;
-      font-weight:600;
+      font-weight:700;
     }
     button.fullscreen:hover{ background:#111827; }
     pre{
@@ -316,6 +324,7 @@
   <script>
     const PREVIEW_CSS_URL = "https://instructure-uploads.s3.amazonaws.com/account_286220000000000001/attachments/8338/michiganOnline30.css";
     const elementsGrid = document.getElementById("elements-grid");
+    const previewMap = new Map();
 
     function escapeHtml(text) {
       return text
@@ -373,10 +382,11 @@
         const fullBtn = document.createElement("button");
         fullBtn.className = "fullscreen";
         fullBtn.type = "button";
-        fullBtn.textContent = "Fullscreen";
-        fullBtn.setAttribute("data-preview", item.previewHtml);
+        fullBtn.setAttribute("aria-label", "Fullscreen preview");
+        fullBtn.textContent = "⤢";
+        fullBtn.setAttribute("data-preview-id", item.id);
         fullBtn.setAttribute("data-title", item.title);
-        row.appendChild(fullBtn);
+        card.appendChild(fullBtn);
       }
       row.appendChild(label);
       row.appendChild(button);
@@ -392,6 +402,7 @@
       card.appendChild(preview);
       card.appendChild(row);
       card.appendChild(pre);
+      previewMap.set(item.id, item.previewHtml || "");
       return card;
     }
 
@@ -483,7 +494,8 @@
     document.addEventListener("click", (e) => {
       const fullBtn = e.target.closest("button.fullscreen");
       if (fullBtn) {
-        const previewHtml = fullBtn.getAttribute("data-preview") || "";
+        const previewId = fullBtn.getAttribute("data-preview-id") || "";
+        const previewHtml = previewMap.get(previewId) || "";
         const title = fullBtn.getAttribute("data-title") || "Preview";
         openModal(previewHtml, title);
         return;
