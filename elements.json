@@ -30,5 +30,45 @@
     "previewHtml": "<table class=\"umich-table-col-stripe\">\n  <thead>\n    <tr>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </tbody>\n</table>",
     "snippetHtml": "<table class=\"umich-table-col-stripe\">\n  <thead>\n    <tr>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n      <th>Sample Header</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </tbody>\n</table>",
     "keywords": "table column stripe striped"
+  },
+  {
+    "id": "side-by-side-callout-a",
+    "title": "Side-by-side Callout A",
+    "description": "Preview + copy/paste snippet.",
+    "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
+    "keywords": "callout side by side list"
+  },
+  {
+    "id": "side-by-side-callout-b",
+    "title": "Side-by-side Callout B",
+    "description": "Preview + copy/paste snippet.",
+    "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n</div>",
+    "keywords": "callout side by side text list"
+  },
+  {
+    "id": "side-by-side-callout-c",
+    "title": "Side-by-side Callout C",
+    "description": "Preview + copy/paste snippet.",
+    "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n      <li>Sample Text</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut neutralCallout\" style=\"background: none; border-top: none;\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>\n  </div>\n</div>",
+    "keywords": "callout side by side long text"
+  },
+  {
+    "id": "side-by-side-callout-d",
+    "title": "Side-by-side Callout D",
+    "description": "Preview + copy/paste snippet.",
+    "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample A</li>\n      <li>Sample B</li>\n      <li>Sample B2</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample C</li>\n      <li>Sample D</li>\n    </ul>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample A</li>\n      <li>Sample B</li>\n      <li>Sample B2</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample C</li>\n      <li>Sample D</li>\n    </ul>\n  </div>\n</div>",
+    "keywords": "callout side by side two lists"
+  },
+  {
+    "id": "side-by-side-callout-e",
+    "title": "Side-by-side Callout E",
+    "description": "Preview + copy/paste snippet.",
+    "previewHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\" style=\"width: 100%;\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Full Width Item 1</li>\n      <li>Full Width Item 2</li>\n    </ul>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\" style=\"width: 100%;\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Full Width Item 1</li>\n      <li>Full Width Item 2</li>\n    </ul>\n  </div>\n</div>",
+    "keywords": "callout side by side full width list"
   }
 ]
