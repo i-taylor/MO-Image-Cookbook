@@ -130,92 +130,95 @@
     </div>
 
     <h2 class="section-title">Accordions</h2>
-    <section class="grid">
-      <article class="card">
-        <h2>Accordion A</h2>
-        <p class="meta">Preview + copy/paste snippet.</p>
-        <div class="preview">
-          <iframe class="preview-frame" title="Accordion A preview" srcdoc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_286220000000000001/attachments/8338/michiganOnline30.css"><style>body{margin:0;padding:12px;font-family:Arial,sans-serif;background:#fff;}</style></head><body><div class="umich-accordion-a"><div>Accordion A</div><details><summary>Item One</summary><div><p>Description text for Item One.</p><ul><li>does list</li><li>does list</li></ul></div></details><details><summary>Item Two</summary><div><p>Description text for Item Two.</p></div></details><details><summary>Item Three</summary><div><p>Description text for Item Three.</p></div></details><details><summary>Item Four</summary><div><p>Description text for Item four.</p></div></details></div></body></html>'></iframe>
-        </div>
-        <div class="row">
-          <strong>Copy/paste snippet</strong>
-          <button class="copy" data-copy="#snip-accordion-a">Copy</button>
-        </div>
-        <pre><code id="snip-accordion-a">&lt;div class="umich-accordion-a"&gt;
-  &lt;div&gt;Accordion A&lt;/div&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Item One&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;Description text for Item One.&lt;/p&gt;
-      &lt;ul&gt;
-        &lt;li&gt;does list&lt;/li&gt;
-        &lt;li&gt;does list&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Item Two&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;Description text for Item Two.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Item Three&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;Description text for Item Three.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Item Four&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;Description text for Item four.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-&lt;/div&gt;</code></pre>
-      </article>
-
-      <article class="card">
-        <h2>Accordion B</h2>
-        <p class="meta">Preview + copy/paste snippet.</p>
-        <div class="preview">
-          <iframe class="preview-frame" title="Accordion B preview" srcdoc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_286220000000000001/attachments/8338/michiganOnline30.css"><style>body{margin:0;padding:12px;font-family:Arial,sans-serif;background:#fff;}</style></head><body><div class="umich-accordion-b"><div>Accordion B</div><details><summary>Definition One</summary><div><p>This is the description for Dimension 1. You can add more text here as needed.</p></div></details><details><summary>Definition Two</summary><div><p>This is the description for Dimension 2. You can add more text here as needed.</p></div></details><details><summary>Definition Three</summary><div><p>This is the description for Dimension 3. You can add more text here as needed.</p></div></details><details><summary>Definition Four</summary><div><p>This is the description for Dimension 4. You can add more text here as needed.</p></div></details></div></body></html>'></iframe>
-        </div>
-        <div class="row">
-          <strong>Copy/paste snippet</strong>
-          <button class="copy" data-copy="#snip-accordion-b">Copy</button>
-        </div>
-        <pre><code id="snip-accordion-b">&lt;div class="umich-accordion-b"&gt;
-  &lt;div&gt;Accordion B&lt;/div&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Definition One&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;This is the description for Dimension 1. You can add more text here as needed.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Definition Two&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;This is the description for Dimension 2. You can add more text here as needed.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Definition Three&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;This is the description for Dimension 3. You can add more text here as needed.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-  &lt;details&gt;
-    &lt;summary&gt;Definition Four&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;This is the description for Dimension 4. You can add more text here as needed.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-&lt;/div&gt;</code></pre>
-      </article>
-    </section>
+    <section class="grid" id="elements-grid"></section>
   </main>
 
   <script>
+    const PREVIEW_CSS_URL = "https://instructure-uploads.s3.amazonaws.com/account_286220000000000001/attachments/8338/michiganOnline30.css";
+    const elementsGrid = document.getElementById("elements-grid");
+
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function buildPreviewSrcdoc(innerHtml) {
+      return [
+        "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">",
+        "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+        "<link rel=\"stylesheet\" href=\"" + PREVIEW_CSS_URL + "\">",
+        "<style>body{margin:0;padding:12px;font-family:Arial,sans-serif;background:#fff;}</style>",
+        "</head><body>",
+        innerHtml,
+        "</body></html>"
+      ].join("");
+    }
+
+    function renderCard(item) {
+      const snippetId = "snippet-" + item.id;
+      const card = document.createElement("article");
+      card.className = "card";
+      card.id = item.id;
+      card.dataset.search = (item.title + " " + (item.keywords || "")).toLowerCase();
+
+      const title = document.createElement("h2");
+      title.textContent = item.title;
+
+      const meta = document.createElement("p");
+      meta.className = "meta";
+      meta.textContent = item.description || "Preview + copy/paste snippet.";
+
+      const preview = document.createElement("div");
+      preview.className = "preview";
+      const frame = document.createElement("iframe");
+      frame.className = "preview-frame";
+      frame.title = item.title + " preview";
+      frame.setAttribute("srcdoc", buildPreviewSrcdoc(item.previewHtml));
+      preview.appendChild(frame);
+
+      const row = document.createElement("div");
+      row.className = "row";
+      const label = document.createElement("strong");
+      label.textContent = "Copy/paste snippet";
+      const button = document.createElement("button");
+      button.className = "copy";
+      button.setAttribute("data-copy", "#" + snippetId);
+      button.textContent = "Copy";
+      row.appendChild(label);
+      row.appendChild(button);
+
+      const pre = document.createElement("pre");
+      const code = document.createElement("code");
+      code.id = snippetId;
+      code.innerHTML = escapeHtml(item.snippetHtml);
+      pre.appendChild(code);
+
+      card.appendChild(title);
+      card.appendChild(meta);
+      card.appendChild(preview);
+      card.appendChild(row);
+      card.appendChild(pre);
+      return card;
+    }
+
+    async function loadElements() {
+      try {
+        const res = await fetch("elements.json");
+        if (!res.ok) throw new Error("Failed to load elements.json");
+        const items = await res.json();
+        if (!Array.isArray(items)) return;
+        items.forEach((item) => elementsGrid.appendChild(renderCard(item)));
+      } catch (err) {
+        if (elementsGrid) {
+          elementsGrid.innerHTML = "<p class=\"meta\">Unable to load elements.json.</p>";
+        }
+      }
+    }
+
     async function copyText(text) {
       try {
         await navigator.clipboard.writeText(text);
@@ -246,6 +249,8 @@
         btn.disabled = false;
       }, 1100);
     });
+
+    loadElements();
   </script>
 </body>
 </html>
