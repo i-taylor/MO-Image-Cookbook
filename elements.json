@@ -70,5 +70,59 @@
     "snippetHtml": "<div class=\"sideBySideCallOutCon\">\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample A</li>\n      <li>Sample B</li>\n      <li>Sample B2</li>\n    </ul>\n  </div>\n  <div class=\"sideBySideCallOut\">\n    <h2>This list is about:</h2>\n    <ul>\n      <li>Sample C</li>\n      <li>Sample D</li>\n    </ul>\n  </div>\n</div>",
     "keywords": "callout side by side two lists",
     "category": "Callout Boxes"
+  },
+  {
+    "id": "page-blue-header",
+    "title": "Blue Header (Top of Page)",
+    "description": "Blue page header bar.",
+    "previewHtml": "<div class=\"canvasPageCon\">\n  <div class=\"pageBody\">\n    <h2>Blue header (top of page)</h2>\n    <div class=\"bluePageHeader\">&nbsp;</div>\n    <p>&lt;div class=\"BluePageHeader\"&gt;&amp;nbsp;&lt;/div&gt;</p>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"bluePageHeader\">&nbsp;</div>",
+    "keywords": "blue header top page bluePageHeader",
+    "category": "Page Elements"
+  },
+  {
+    "id": "page-blue-gradient-break",
+    "title": "Blue Gradient Break (DIV)",
+    "description": "Blue gradient divider to break up text.",
+    "previewHtml": "<div class=\"canvasPageCon\">\n  <div class=\"pageBody\">\n    <h3><strong>Blue gradient break using a DIV tag</strong></h3>\n    <div style=\"padding: 30px 0;\">\n      <div style=\"width: 66%; height: 4px; background: linear-gradient(to right, rgba(0, 39, 76, 0), #00274C, rgba(0, 39, 76, 0)); margin: 0 auto;\">&nbsp;</div>\n    </div>\n  </div>\n</div>",
+    "snippetHtml": "<div style=\"padding: 30px 0;\">\n  <div style=\"width: 66%; height: 4px; background: linear-gradient(to right, rgba(0, 39, 76, 0), #00274C, rgba(0, 39, 76, 0)); margin: 0 auto;\">&nbsp;</div>\n</div>",
+    "keywords": "blue gradient break divider line",
+    "category": "Page Elements"
+  },
+  {
+    "id": "page-yellow-gradient-break",
+    "title": "Yellow Gradient Break (DIV)",
+    "description": "Yellow gradient divider to break up text.",
+    "previewHtml": "<div class=\"canvasPageCon\">\n  <div class=\"pageBody\">\n    <h3><strong>Yellow gradient break using a DIV tag</strong></h3>\n    <div style=\"padding: 30px 0;\">\n      <div style=\"width: 66%; height: 4px; background: linear-gradient(to right, rgba(255, 203, 5, 0), #FFCB05, rgba(255, 203, 5, 0)); margin: 0 auto;\">&nbsp;</div>\n    </div>\n  </div>\n</div>",
+    "snippetHtml": "<div style=\"padding: 30px 0;\">\n  <div style=\"width: 66%; height: 4px; background: linear-gradient(to right, rgba(255, 203, 5, 0), #FFCB05, rgba(255, 203, 5, 0)); margin: 0 auto;\">&nbsp;</div>\n</div>",
+    "keywords": "yellow gradient break divider line",
+    "category": "Page Elements"
+  },
+  {
+    "id": "page-content-warning",
+    "title": "Content Warning Call-Out",
+    "description": "High-visibility content note box.",
+    "previewHtml": "<div class=\"canvasPageCon\">\n  <div class=\"pageBody\">\n    <h3><strong>Content Warning Call-Out</strong></h3>\n    <div style=\"background-color: #1d4ed8; border-top: 6px solid #60a5fa; padding: 20px; margin: 30px 0; color: white; font-family: Arial;\">\n      <h2 style=\"margin-top: 0; color: white;\">Content Note:</h2>\n      <ul>\n        <li>The following video contains [add details here]. [Notes on how to proceed if uncomfortable]</li>\n      </ul>\n    </div>\n  </div>\n</div>",
+    "snippetHtml": "<div style=\"background-color: #1d4ed8; border-top: 6px solid #60a5fa; padding: 20px; margin: 30px 0; color: white; font-family: Arial;\">\n  <h2 style=\"margin-top: 0; color: white;\">Content Note:</h2>\n  <ul>\n    <li>The following video contains [add details here]. [Notes on how to proceed if uncomfortable]</li>\n  </ul>\n</div>",
+    "keywords": "content warning note callout alert",
+    "category": "Page Elements"
+  },
+  {
+    "id": "page-quote-callout",
+    "title": "Quote Call-Out Box",
+    "description": "Quote with attribution styling.",
+    "previewHtml": "<div class=\"canvasPageCon\">\n  <div class=\"pageBody\">\n    <h3><strong>Quote Call-Out box</strong></h3>\n    <div class=\"quote divisionLineYellow divisionLineYellowTop\">\n      <p style=\"color: #6b6b6b;\">\"Text inside a quote - put your quote here\"</p>\n      <h3>Quote Attribution - Quote author</h3>\n    </div>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"quote divisionLineYellow divisionLineYellowTop\">\n  <p style=\"color: #6b6b6b;\">\"Text inside a quote - put your quote here\"</p>\n  <h3>Quote Attribution - Quote author</h3>\n</div>",
+    "keywords": "quote callout attribution divisionLineYellow",
+    "category": "Page Elements"
+  },
+  {
+    "id": "page-landing-footer",
+    "title": "Footer Text and Image",
+    "description": "Landing page footer with image and text.",
+    "previewHtml": "<div class=\"canvasPageCon\">\n  <div class=\"pageBody\">\n    <h2>Footer text and image:</h2>\n    <div class=\"landingPageFooter divisionLineYellowTop\">\n      <img role=\"presentation\" src=\"https://courses.online.umich.edu/courses/257/files/8292/preview\" alt=\"\" width=\"540\" height=\"95\" />\n      <p>A Michigan Online Learning Experience</p>\n    </div>\n  </div>\n</div>",
+    "snippetHtml": "<div class=\"landingPageFooter divisionLineYellowTop\">\n  <img role=\"presentation\" src=\"https://courses.online.umich.edu/courses/257/files/8292/preview\" alt=\"\" width=\"540\" height=\"95\" />\n  <p>A Michigan Online Learning Experience</p>\n</div>",
+    "keywords": "footer landingPageFooter image text",
+    "category": "Page Elements"
   }
 ]
