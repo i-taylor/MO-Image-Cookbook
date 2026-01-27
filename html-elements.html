@@ -420,17 +420,14 @@
       button.className = "copy";
       button.setAttribute("data-copy", "#" + snippetId);
       button.textContent = "Copy";
-      const isCallout = item.id && item.id.indexOf("side-by-side-callout") === 0;
-      if (isCallout) {
-        const fullBtn = document.createElement("button");
-        fullBtn.className = "fullscreen";
-        fullBtn.type = "button";
-        fullBtn.setAttribute("aria-label", "Fullscreen preview");
-        fullBtn.textContent = "⤢";
-        fullBtn.setAttribute("data-preview-id", item.id);
-        fullBtn.setAttribute("data-title", item.title);
-        card.appendChild(fullBtn);
-      }
+      const fullBtn = document.createElement("button");
+      fullBtn.className = "fullscreen";
+      fullBtn.type = "button";
+      fullBtn.setAttribute("aria-label", "Fullscreen preview");
+      fullBtn.textContent = "⤢";
+      fullBtn.setAttribute("data-preview-id", item.id);
+      fullBtn.setAttribute("data-title", item.title);
+      card.appendChild(fullBtn);
       row.appendChild(label);
       row.appendChild(button);
 
