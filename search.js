@@ -20,6 +20,10 @@
     { title: "Reading icon", page: "index.html", url: "index.html#asset-reading-icon", keywords: "icons reading.png book page" },
     { title: "Star icon", page: "index.html", url: "index.html#asset-star-icon", keywords: "icons star.png star" },
     { title: "Time icon", page: "index.html", url: "index.html#asset-time-icon", keywords: "icons time.png clock" },
+    { title: "New Canvas text block", page: "new-canvas-elements.html", url: "new-canvas-elements.html#new-canvas-text-block", keywords: "new canvas text block section h2 h3 h4 paragraph" },
+    { title: "New Canvas callout boxes", page: "new-canvas-elements.html", url: "new-canvas-elements.html#new-canvas-callouts", keywords: "new canvas callout box information action highlight tag" },
+    { title: "New Canvas video blocks", page: "new-canvas-elements.html", url: "new-canvas-elements.html#new-canvas-video-blocks", keywords: "new canvas video block lecture guest lecture blue highlight" },
+    { title: "New Canvas accordions", page: "new-canvas-elements.html", url: "new-canvas-elements.html#new-canvas-accordions", keywords: "new canvas accordion details summary faq frequently asked accordions" },
     { title: "Snippet checklist", page: "snippets.html", url: "snippets.html#snippet-checklist", keywords: "snippet rules checklist role presentation alt width height base url icons" }
   ];
   const dynamicSearchData = [];
